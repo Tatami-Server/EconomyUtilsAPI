@@ -4,7 +4,7 @@ import com.tatamiserver.economyutils.EconomyUtils;
 import com.tatamiserver.economyutils.util.DatabaseHandler;
 import org.bukkit.OfflinePlayer;
 
-class EconomyUtilsApi {
+public class EconomyUtilsApi {
 
     private static final DatabaseHandler databaseHandler  = EconomyUtils.getDatabaseHandler();
 
