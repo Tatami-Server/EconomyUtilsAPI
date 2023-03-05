@@ -5,3 +5,17 @@ api-version: 1.13
 depend: [ QuickShop, Vault ]
 softdepend: [ QuickShop, Vault ]
 authors: [ kuripasanda ]
+
+commands:
+  economyutils:
+    aliases: eus
+    description: ""
+
+permissions:
+  economyutils:
+    description: ""
+    children:
+      economyutils.admin: true
+
+  economyutils.admin:
+    description: ""

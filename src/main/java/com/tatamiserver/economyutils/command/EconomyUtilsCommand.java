@@ -1,5 +1,6 @@
 package com.tatamiserver.economyutils.command;
 
+import com.tatamiserver.economyutils.EconomyUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -18,6 +19,16 @@ class EconomyUtilsCommand implements CommandExecutor, TabExecutor {
             sender.sendMessage("");
         }
 
+        if (args.length == 0) {
+            return true;
+        }
+
+        if (args.length == 1) {
+            switch (args[0]) {
+                case "reload" -> EconomyUtils.reload();
+            }
+        }
+
         return true;
     }
 
@@ -26,6 +37,10 @@ class EconomyUtilsCommand implements CommandExecutor, TabExecutor {
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 
         List<String> tab = new ArrayList<>();
+
+        if (args.length == 1) {
+            if (args[0].startsWith("reload")) tab.add("reload");
+        }
 
         return tab;
     }
