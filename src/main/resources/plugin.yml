@@ -1,7 +1,7 @@
-name: EconomyUtilsAPI
+name: EconomyUtils
 version: '${project.version}'
-main: com.tatamiserver.economyutilsapi.EconomyUtilsAPI
+main: com.tatamiserver.economyutils.EconomyUtils
 api-version: 1.13
-depend: [ QuickShop, VaultAPI ]
-softdepend: [ QuickShop, VaultAPI ]
+depend: [ QuickShop, Vault ]
+softdepend: [ QuickShop, Vault ]
 authors: [ kuripasanda ]

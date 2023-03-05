@@ -1,0 +1,9 @@
+databases:
+  main:
+    url:  "jdbc:mysql://localhost:3306/tatami_life_economyUtils"
+    user: "root"
+    pass: "root"
+  quickshop:
+    url:  "jdbc:mysql://localhost:3306/tatami_life_quickshop"
+    user:  "root"
+    pass:  "root"
